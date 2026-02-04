@@ -9,24 +9,29 @@ impacts **trader performance and behavior** on the Hyperliquid platform and to d
 
 ## 📁 Project Structure
 
-assignment
+## 📁 Project Structure
 
-── analysis.ipynb # Main notebook (data prep, analysis, insights)
--─ README.md # Project overview, setup, and execution steps
-── insights.txt # Short write-up (methodology, insights, strategies)
-── requirements.txt # Python dependencies
+```
+assignment/
+│
+├── analysis.ipynb          # Main notebook (data prep, analysis, insights)
+├── README.md               # Project overview, setup, and execution steps
+├── insights.txt            # Short write-up (methodology, insights, strategies)
+├── requirements.txt        # Python dependencies
+│
+├── data/
+│   ├── fear_greed_index.csv
+│   └── historical_data.csv
+│
+└── charts/                 # Output charts & tables
+    ├── insight1_pnl_distribution.png
+    ├── insight1_pnl_table.csv
+    ├── insight2_behavior_table.csv
+    ├── insight2_trade_frequency.png
+    ├── insight3_bias_table.csv
+    └── insight3_long_bias.png
+```
 
-── data/
-── fear_greed_index.csv
-└── historical_data.csv
-
-── charts/ # Output charts & tables
-── insight1_pnl_distribution.png
-── insight1_pnl_table.csv
-── insight2_behavior_table.csv
-── insight2_trade_frequency.png
-── insight3_bias_table.csv
-── insight3_long_bias.png
 
 ## ⚙️ Setup Instructions
 
