@@ -1,0 +1,42 @@
+## Trader Performance vs Market Sentiment — Summary
+
+### Methodology
+The analysis combines two datasets:  
+(1) daily Bitcoin market sentiment (Fear/Greed) and  
+(2) historical trader-level execution data from Hyperliquid.
+
+All trades were aggregated at a **daily trader level** to compute key performance and behavior metrics, including:
+- daily PnL per trader
+- win rate
+- number of trades per day
+- average position size (leverage proxy)
+- long/short bias
+
+Trader metrics were then aligned with daily market sentiment and compared across **Fear vs Greed regimes**.  
+Insights were validated using **summary tables and visualizations (boxplots and bar charts)**.  
+No future information was used, ensuring the analysis reflects realistic trading conditions.
+
+
+
+### Key Insights
+1. **Performance differs by sentiment**  
+   Traders achieve higher average daily PnL during Greed periods compared to Fear periods. However, PnL volatility is also higher during Greed, indicating increased drawdown risk.
+
+2. **Trader behavior becomes more aggressive during Greed**  
+   Both trade frequency and average position size increase during Greed days, suggesting higher risk appetite compared to Fear regimes.
+
+3. **Long bias increases without proportional improvement in win rate**  
+   Although traders exhibit a stronger long bias during Greed periods, the corresponding increase in win rate is marginal, indicating potential overconfidence rather than a genuine edge.
+
+All insights are supported by corresponding tables and charts included in the notebook and saved in the `charts/` directory.
+
+
+
+### Strategy Recommendations
+1. Sentiment-aware risk management 
+   Reduce leverage and position size during Fear periods to limit drawdowns, while allowing normal or slightly higher exposure during Greed periods.
+
+2. Selective activity scaling
+   Increase trade frequency only during Greed regimes and primarily for traders who already exhibit consistent performance, rather than uniformly increasing activity across all traders.
+
+These sentiment-conditioned rules can improve risk-adjusted returns without requiring precise market timing.
