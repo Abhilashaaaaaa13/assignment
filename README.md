@@ -28,9 +28,6 @@ assignment/
 ├── insight3_bias_table.csv
 └── insight3_long_bias.png
 
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the repository
